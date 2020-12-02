@@ -3,7 +3,7 @@
 import ScrollSuave from "./modules/scroll-suave.js";
 import Accordion from "./modules/accordion.js";
 import TabNav from "./modules/tabNav.js"
-import Modal from "./modules/modal.js"
+import Modal from './modules/modal.js';
 
 import initTooltip from "./modules/ToolTip.js"
 import initDropdownMenu from "./modules/dropdown-menu.js";
