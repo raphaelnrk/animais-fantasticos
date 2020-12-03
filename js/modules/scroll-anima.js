@@ -19,15 +19,16 @@ export default class scrollAnima {
 }  
 
 
-//Verifica a distancia de cada objeto
+  // Verifica a distancia de cada objeto
+
   checkDistance() {
     this.distance.forEach((item) => {
       if (window.pageYOffset > item.offset) {
         item.element.classList.add('ativo');
-        } else if (item.element.classList.contains('ativo')) {
-          item.elementsection.classList.remove('ativo');
-        }
+      } else if (item.element.classList.contains('ativo')) {
+        item.elementsection.classList.remove('ativo');
       }
+    }
     );
   }
 
