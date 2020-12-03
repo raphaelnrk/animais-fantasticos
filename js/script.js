@@ -5,11 +5,11 @@ import Accordion from "./modules/accordion.js";
 import TabNav from "./modules/tabNav.js"
 import Modal from './modules/modal.js';
 import Tooltip from "./modules/ToolTip.js"
+import fetchAnimais from "./modules/fetchanimais.js";
 
 import initDropdownMenu from "./modules/dropdown-menu.js";
 import initmenuMobile from "./modules/menu-mobile.js";
 import initFuncionamento from "./modules/funcionamento.js";
-import initFetchAnimais from "./modules/fetchanimais.js";
 import initFetchBitcoin from "./modules/fetchbitcoin.js";
 import initAnimacaoScroll from "./modules/scroll-animacao.js";
 
@@ -31,6 +31,7 @@ tooltip.init();
 initDropdownMenu();
 initmenuMobile();
 initFuncionamento();
-initFetchAnimais();
 initFetchBitcoin();
 initAnimacaoScroll();
+
+fetchAnimais('../../animaisapi.json', '.numeros-grid');
