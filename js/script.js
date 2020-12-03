@@ -7,8 +7,8 @@ import Modal from './modules/modal.js';
 import Tooltip from "./modules/ToolTip.js"
 import fetchAnimais from "./modules/fetchanimais.js";
 import fetchBitcoin from "./modules/fetchbitcoin.js";
+import DropdownMenu from "./modules/dropdown-menu.js";
 
-import initDropdownMenu from "./modules/dropdown-menu.js";
 import initmenuMobile from "./modules/menu-mobile.js";
 import initFuncionamento from "./modules/funcionamento.js";
 import scrollAnima from "./modules/scroll-anima.js";
@@ -32,7 +32,9 @@ const scrollanima = new scrollAnima('[data-anime="scroll"]');
 scrollanima.init();
 // scrollanima.stop();
 
-initDropdownMenu();
+const dropdownmenu = new DropdownMenu('[data-dropdown]');
+dropdownmenu.init();
+
 initmenuMobile();
 initFuncionamento();
 
