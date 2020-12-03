@@ -18,13 +18,11 @@ export default function fetchAnimais(url, target) {
     numerosGrid.appendChild(divAnimal);
   }
 
-
   //Anima os numeros de cada animal
   function animaAnimaisNumeros() {
     const animaNumeros = new AnimaNumeros('[data-numero]', '.numeros', 'ativo');
     animaNumeros.init();
   }
-
 
   //Puxa os animais através de um arquivo json e cria cada animal utilizando createAnimal
   async function criarAnimais() {
